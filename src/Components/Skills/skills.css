@@ -1,0 +1,36 @@
+.skills-section {
+    background-color: #de8c3f;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .skills-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skill-icon {
+    font-size: 55px;
+    color: #fff;
+    margin: 0 20px;
+    transition: transform 0.2s;
+  }
+  
+  .skill-icon:hover {
+    transform: scale(1.2);
+  }
+  
