@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './content.css';
+import Skills from '../Skills/skills';
 
 const ExperienceItem = ({ experience }) => {
   return (
@@ -39,14 +40,17 @@ const Content = () => {
   ];
 
   return (
-    <div className="content-container">
-      <h1 className="h1-experience">{info.experience}</h1>
-      <div className="experience-list">
-        {experience.map((item, index) => (
-          <ExperienceItem key={index} experience={item} />
-        ))}
+    <>
+      <Skills />
+      <div className="content-container">
+        <h1 className="h1-experience">{info.experience}</h1>
+        <div className="experience-list">
+          {experience.map((item, index) => (
+            <ExperienceItem key={index} experience={item} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

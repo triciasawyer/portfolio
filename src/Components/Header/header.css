@@ -1,0 +1,28 @@
+.Header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+}
+
+.Header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: large;
+}
+
+.Header-nav li {
+    margin-top: 5px;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    margin: 15px;
+    color: rgb(174, 239, 231);
+}
+
+.heading {
+    margin-bottom: auto;
+}
