@@ -13,6 +13,9 @@ const Header = () => {
           <li>
             <Link className="link" to="/contact">Contact</Link>
           </li>
+          <li>
+            <Link className="link" to="/about">About</Link>
+          </li>
         </ul>
       </nav>
       <div className='heading'>
