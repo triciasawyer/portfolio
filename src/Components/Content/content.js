@@ -40,19 +40,18 @@ const Content = () => {
   ];
 
   return (
-    <>
-      <Skills />
-      <div className="content-container">
-        <h1 className="h1-experience">{info.experience}</h1>
+    <div className="content-container">
+      <div className="flex-container">
+        <Skills />
         <div className="experience-list">
+          <h1 className="h1-experience">{info.experience}</h1>
           {experience.map((item, index) => (
             <ExperienceItem key={index} experience={item} />
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
-
 
 export default Content;

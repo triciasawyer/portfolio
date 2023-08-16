@@ -12,8 +12,8 @@ function App() {
         <Header />
         <main>
           <Routes>
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/" element={<Content />} /> 
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<Content />} />
           </Routes>
         </main>
       </div>
