@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './content.css';
 import Skills from '../Skills/skills';
 import Header from '../Header/header';
+import Carousel from 'react-bootstrap/Carousel';
 
 const ExperienceItem = ({ experience }) => {
   return (
@@ -14,11 +15,31 @@ const ExperienceItem = ({ experience }) => {
   );
 };
 
+const ProjectCarousel = () => {
+  // Placeholder images for projects
+  const projectImages = [
+    'https://via.placeholder.com/400x200',
+    'https://via.placeholder.com/400x200',
+    'https://via.placeholder.com/400x200',
+  ];
+
+
+  return (
+    <Carousel>
+      {projectImages.map((image, index) => (
+        <Carousel.Item key={index}>
+          <img className="d-block w-100" src={image} alt={`Project ${index + 1}`} />
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  );
+};
+
 const Content = () => {
   const info = {
     experience: "Experience",
-  }
-
+    projects: "Projects",
+  };
 
   const experience = [
     {
@@ -42,18 +63,26 @@ const Content = () => {
 
   return (
     <>
-    <Header />
-    <div className="content-container">
-      <div className="flex-container">
-        <Skills />
-        <div className="experience-list">
-          <h1 className="h1-experience">{info.experience}</h1>
-          {experience.map((item, index) => (
-            <ExperienceItem key={index} experience={item} />
-          ))}
+      <Header />
+      <div className="content-container">
+        <div className="flex-container">
+          <Skills />
+          <div className="experience-list">
+            <h1 className="h1-experience">{info.experience}</h1>
+            {experience.map((item, index) => (
+              <ExperienceItem key={index} experience={item} />
+            ))}
+          </div>
+        </div>
+        <div className="project-list">
+          <h1 className="h1-experience">{info.projects}</h1>
+          <div className="project-carousel-container">
+            <ProjectCarousel className="project-carousel" />
+            <ProjectCarousel className="project-carousel" />
+            <ProjectCarousel className="project-carousel" />
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 }
