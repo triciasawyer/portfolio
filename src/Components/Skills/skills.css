@@ -1,11 +1,11 @@
 .skills-section {
-  background-color: #3866c1;
+  background-color: #eeeeee;
   padding: 20px;
   margin-top: 50px;
   display: flex;
-  justify-content: flex-end;
   width: 15rem;
-  margin: 2px;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -23,16 +23,33 @@
 .skills-icons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
-.skill-icon {
-  font-size: 55px;
-  color: #fff;
+.skill {
+  display: flex;
+  align-items: center;
   margin: 10px 0;
   transition: transform 0.2s;
 }
 
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-icon {
+  font-size: 55px;
+  color: #3866c1;
+  transition: transform 0.2s;
+}
+
+.skill-name {
+  font-size: 14px;
+  color: #333;
+}
+
 .skill-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
