@@ -6,9 +6,16 @@ import logo from '../../images/logo.png';
 const Header = () => {
   return (
     <header className='App-header'>
+      <div className='nav-heading'>
         <Nav />
+      </div>
       <div className='logo-con'>
-        <img src={logo} alt="Logo" className="logo" />
+        <div className='logo'>
+          <img src={logo} alt="Logo" className="logo-img" />
+          <div className='logo-overlay'>
+            Hover to Explore
+          </div>
+        </div>
         <div className='heading'>
           <h1 className='header-title'>
             Welcome to my Portfolio

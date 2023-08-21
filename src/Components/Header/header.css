@@ -2,13 +2,18 @@
     margin-bottom: auto;
 }
 
+.nav-heading {
+    margin-right: 30px;
+}
+
 .logo-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.logo {
+.logo-img {
     width: 16rem;
     height: auto;
     border-radius: 38%;
@@ -16,12 +21,26 @@
     margin-bottom: 5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, filter 0.2s;
-}
+  }
 
-.logo:hover {
+.logo-img:hover {
     transform: scale(1.05);
     filter: brightness(0.8) blur(2px);
 }
+
+.logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .logo-img:hover + .logo-overlay {
+    opacity: 1;
+  }
 
 .header-title {
     font-size: 2.5rem;
