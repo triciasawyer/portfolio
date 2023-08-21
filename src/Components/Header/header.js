@@ -1,36 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Nav from './nav';
 import './header.css';
+import logo from '../../images/logo.png';
 
 const Header = () => {
   return (
-    <header className="App-header">
-      <nav className="Header-nav">
-        <ul>
-          <li>
-            <Link className="link" to="/">Home</Link>
-          </li>
-          <li>
-            <Link className="link" to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link className="link" to="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
-      <div className='heading'>
-      <h1>
-        <span style={{ fontSize: '4rem', color: 'pink', marginRight: '10px' }}>
-          &#123;&#123;
-        </span>{' '}
-        Welcome to My Portfolio{' '}
-        <span style={{ fontSize: '4rem', color: 'pink', marginLeft: '10px' }}>
-          &#125;&#125;
-        </span>
-      </h1>
-      <p>
-        Explore my projects, skills, and experience in the world of Front-End Software Development.
-      </p>
+    <header className='App-header'>
+        <Nav />
+      <div className='logo-con'>
+        <img src={logo} alt="Logo" className="logo" />
+        <div className='heading'>
+          <h1 className='header-title'>
+            Welcome to my Portfolio
+          </h1>
+          <p className='header-description'>
+            Explore my projects, skills, and experience in the world of Front-End Software Development.
+          </p>
+        </div>
       </div>
     </header>
   );

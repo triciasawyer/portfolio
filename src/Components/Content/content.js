@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './content.css';
 import Skills from '../Skills/skills';
+import Header from '../Header/header';
 
 const ExperienceItem = ({ experience }) => {
   return (
@@ -40,6 +41,8 @@ const Content = () => {
   ];
 
   return (
+    <>
+    <Header />
     <div className="content-container">
       <div className="flex-container">
         <Skills />
@@ -51,6 +54,7 @@ const Content = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

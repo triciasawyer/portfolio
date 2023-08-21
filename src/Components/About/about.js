@@ -1,8 +1,11 @@
 import React from 'react';
+import Nav from '../Header/nav'
 import './about.css';
 
 const About = () => {
   return (
+    <>
+    <Nav />
     <div className="about-container">
       <div className="about-header">
       </div>
@@ -27,6 +30,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
