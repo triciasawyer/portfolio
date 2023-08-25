@@ -1,11 +1,11 @@
 import React from 'react';
-import Nav from '../Header/nav'
+import Header from '../Header/header';
 import './about.css';
 
 const About = () => {
   return (
     <>
-    <Nav />
+    <Header />
     <div className="about-container">
       <div className="about-header">
       </div>

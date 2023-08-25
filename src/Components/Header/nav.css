@@ -12,12 +12,12 @@
   .nav-link {
     text-decoration: none;
     font-size: 1.2rem;
-    color: rgb(90, 88, 88);
+    color: rgb(233, 233, 233);
     transition: color 0.3s;
   }
   
   .nav-link:hover {
-    color: #ff6b6b;
+    color: #6b6969;
   }
 
   @media (max-width: 768px) {

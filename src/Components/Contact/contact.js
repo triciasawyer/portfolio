@@ -1,11 +1,11 @@
 import React from 'react';
-import Nav from '../Header/nav';
+import Header from '../Header/header';
 import './contact.css';
 
 const Contact = () => {
   return (
     <>
-      <Nav />
+      <Header />
       <div className="contact-container">
         <h2 className="contact-title">Let's Get in Touch!</h2>
         <p className="contact-text">If you'd like to get in touch with me, whether it's for job opportunities, collaboration, or just to say hi, feel free to reach out!</p>

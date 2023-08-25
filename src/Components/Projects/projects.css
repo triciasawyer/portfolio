@@ -2,11 +2,13 @@
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px;
+    width: 15rem;
+    height: 15rem;
   }
   
   .carousel-date,
-  .carousel-languages,
-  .carousel-details {
+  .carousel-lang,
+  .carousel-det {
     margin: 5px 0;
   }
 
