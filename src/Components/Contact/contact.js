@@ -7,8 +7,8 @@ const Contact = () => {
     <>
       <Header />
       <div className="contact-container">
-        <h2 className="contact-title">Let's Get in Touch!</h2>
-        <p className="contact-text">If you'd like to get in touch with me, whether it's for job opportunities, collaboration, or just to say hi, feel free to reach out!</p>
+        <h2 className="contact-title">contact.</h2>
+        <p className="contact-text">Get in touch with me via social media or email.</p>
         <div className="contact-details">
           <p className="contact-info">
             📬 Email: <a href="mailto:tricia.sawyer03@gmail.com" className="contact-link">tricia.sawyer03@gmail.com</a>

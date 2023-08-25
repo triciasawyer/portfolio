@@ -12,11 +12,6 @@ const Project = ({ title, date, languages, details, images }) => {
                             <img className="project-img" src={image} alt={`Project ${index + 1}`} />
                         </Carousel.Item>
                     ))}
-                    {/* <div className="carousel-caption">
-                        <p className='carousel-date'>Date: {date}</p>
-                        <p className='carousel-lang'>Languages Used: {languages}</p>
-                        <p className='carousel-det'>Details: {details}</p>
-                    </div> */}
                 </Carousel>
             </div>
         </>
