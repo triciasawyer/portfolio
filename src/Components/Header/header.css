@@ -9,6 +9,7 @@
     width: 90px;
     margin-right: 20rem;
 }
+
 .social-icons {
     display: flex;
     margin-left: 10rem;
@@ -28,7 +29,6 @@
 .linkedin-icon {
     margin-right: 15px;
     filter: invert(100%);
-
 }
 
 .linkedin-logo {
@@ -56,4 +56,20 @@
     text-align: center;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .nav-heading {
+        margin-right: 0;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+    
+      .logo {
+        margin-right: 0;
+        flex: 1;
+      }
+    
+      .social-icons {
+        margin-left: 0;
+      }
+}
