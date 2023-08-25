@@ -1,9 +1,8 @@
-/* contact.css */
-
 .contact-container {
     background-color: #f7f7f7;
     padding: 50px 0;
     text-align: center;
+    box-sizing: border-box;
   }
   
   .contact-title {
@@ -36,4 +35,10 @@
   .contact-link:hover {
     color: #0056b3;
   }
+
+  @media (max-width: 768px) {
+    .contact-title {
+        font-size: 2rem;
+    }
+}
   
