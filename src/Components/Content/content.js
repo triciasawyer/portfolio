@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './content.css';
 import Skills from '../Skills/skills';
 import Header from '../Header/header';
-import Carousel from 'react-bootstrap/Carousel';
+import Project from '../Projects/projects';
 
 const ExperienceItem = ({ experience }) => {
   return (
@@ -15,31 +15,25 @@ const ExperienceItem = ({ experience }) => {
   );
 };
 
-const ProjectCarousel = () => {
-  // Placeholder images for projects
-  const projectImages = [
-    'https://via.placeholder.com/400x200',
-    'https://via.placeholder.com/400x200',
-    'https://via.placeholder.com/400x200',
-  ];
-
-
-  return (
-    <Carousel>
-      {projectImages.map((image, index) => (
-        <Carousel.Item key={index}>
-          <img className="d-block w-100" src={image} alt={`Project ${index + 1}`} />
-        </Carousel.Item>
-      ))}
-    </Carousel>
-  );
-};
-
 const Content = () => {
   const info = {
     experience: "Experience",
     projects: "Projects",
   };
+
+  const projects = [
+    {
+      title: "Project 1",
+      date: "July 2022",
+      languages: "JavaScript, React",
+      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      images: [
+        'https://via.placeholder.com/400x200',
+        'https://via.placeholder.com/400x200',
+        'https://via.placeholder.com/400x200',
+      ],
+    },
+  ];
 
   const experience = [
     {
@@ -75,12 +69,19 @@ const Content = () => {
           </div>
         </div>
         <div className="project-list">
-          <h1 className="h1-experience">{info.projects}</h1>
+          <h1>{info.projects}</h1>
           <div className="project-carousel-container">
-            <ProjectCarousel className="project-carousel" />
-            <ProjectCarousel className="project-carousel" />
-            <ProjectCarousel className="project-carousel" />
-          </div>
+          {projects.map((project, index) => (
+            <Project
+              key={index}
+              title={project.title}
+              date={project.date}
+              languages={project.languages}
+              details={project.details}
+              images={project.images}
+            />
+          ))}
+            </div>
         </div>
       </div>
     </>
