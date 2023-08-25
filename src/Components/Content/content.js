@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './content.css';
 import Header from '../Header/header';
 import Project from '../Projects/projects';
+import profileImg from '../../images/imgp.png';
 
 const Content = () => {
   const info = {
@@ -26,6 +27,12 @@ const Content = () => {
   return (
     <>
       <Header />
+      <div className="img-section">
+        <img
+          className="profile-img"
+          src={profileImg}
+          alt="Profile pic"
+        />
       <div className="content-container">
         <div className="flex-container">
         <div className="project-list">
@@ -42,6 +49,7 @@ const Content = () => {
             ))}
             </div>
           </div>
+        </div>
         </div>
     </>
   );
