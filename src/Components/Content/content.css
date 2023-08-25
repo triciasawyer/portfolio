@@ -26,7 +26,29 @@
 .projects-h1 {
   font-weight: light;
   font-size: 20px;
-  color: rgb(63, 62, 62);
+  color: rgb(101, 101, 101);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.projects-h1::before,
+.projects-h1::after {
+  content: "";
+  display: inline-block;
+  width: 25rem;
+  height: 1px;
+  background-color: rgb(77, 77, 77);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.projects-h1::before {
+  left: -24rem;
+}
+
+.projects-h1::after {
+  right: -24rem;
 }
 
 @media (max-width: 767px) {

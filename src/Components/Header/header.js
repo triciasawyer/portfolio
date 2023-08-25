@@ -15,7 +15,7 @@ const Header = () => {
         </div>
         <Nav />
         <div className="social-icons">
-          <a href="link-to-your-linkedin-profile" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+          <a href="https://www.linkedin.com/in/triciasawyer-03dev/" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
             alt="LinkedIn"
             className="linkedin-logo"

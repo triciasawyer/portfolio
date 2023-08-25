@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './content.css';
-import Skills from '../Skills/skills';
 import Header from '../Header/header';
 import Project from '../Projects/projects';
 
@@ -29,7 +28,6 @@ const Content = () => {
       <Header />
       <div className="content-container">
         <div className="flex-container">
-          <Skills />
         <div className="project-list">
           <h1 className='projects-h1'>{info.projects}</h1>
             {projects.map((project, index) => (

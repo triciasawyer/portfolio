@@ -1,19 +1,20 @@
 import React from 'react';
 import Header from '../Header/header';
+import Skills from '../Skills/skills';
 import './about.css';
 
 const About = () => {
   return (
     <>
-    <Header />
-    <div className="about-container">
-      <div className="about-header">
+      <Header />
+      <div className="about-container">
+        <h1>about.</h1>
       </div>
       <div className="about-content">
         <div className="profile-image-container">
           <img
             src="your-profile-image-url.jpg"
-            alt="Your Name"
+            alt="Tricia Sawyer"
             className="profile-image"
           />
         </div>
@@ -27,9 +28,9 @@ const About = () => {
           <p>
             When I'm not coding, you can find me on the lake kyaking, or just enjoying the outdoors being active.
           </p>
+          <Skills />
         </div>
       </div>
-    </div>
     </>
   );
 }
