@@ -43,6 +43,12 @@
   width: auto;
 }
 
+/* .project-list .project-carousel-container {
+  flex: auto; 
+  margin: 0 1rem; */
+  /* max-width: 100%; */
+/* } */
+
 .projects-h1 {
   font-weight: light;
   font-size: 20px;
