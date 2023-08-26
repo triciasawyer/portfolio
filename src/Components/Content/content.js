@@ -22,6 +22,28 @@ const Content = () => {
         'https://via.placeholder.com/400x200',
       ],
     },
+    {
+      title: "Project 2", // Add a new project
+      date: "August 2022",
+      languages: "Python, Flask",
+      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      images: [
+        'https://via.placeholder.com/400x200',
+        'https://via.placeholder.com/400x200',
+        'https://via.placeholder.com/400x200',
+      ],
+    },
+    {
+      title: "Project 3", // Add another new project
+      date: "September 2022",
+      languages: "HTML, CSS",
+      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      images: [
+        'https://via.placeholder.com/400x200',
+        'https://via.placeholder.com/400x200',
+        'https://via.placeholder.com/400x200',
+      ],
+    },
   ];
 
   return (
@@ -33,10 +55,12 @@ const Content = () => {
           src={profileImg}
           alt="Profile pic"
         />
+        </div>
       <div className="content-container">
         <div className="flex-container">
+        <h1 className="projects-h1">{info.projects}</h1>
+
         <div className="project-list">
-          <h1 className='projects-h1'>{info.projects}</h1>
             {projects.map((project, index) => (
               <Project
                 key={index}
@@ -49,7 +73,6 @@ const Content = () => {
             ))}
             </div>
           </div>
-        </div>
         </div>
     </>
   );

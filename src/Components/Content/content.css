@@ -1,15 +1,16 @@
 .content-container {
-  padding: 30px;
+  padding: 60px 30px;
   background-color: #f8f8f8;
-  max-width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  gap: 8rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
   margin-left: 10px;
 }
 
