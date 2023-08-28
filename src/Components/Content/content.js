@@ -1,9 +1,8 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './content.css';
-import Header from '../Header/header';
 import Project from '../Projects/projects';
 import profileImg from '../../images/imgp.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './content.css';
 
 const Content = () => {
   const info = {
@@ -48,7 +47,6 @@ const Content = () => {
 
   return (
     <>
-      <Header />
       <div className="img-section">
         <img
           className="profile-img"
@@ -57,7 +55,6 @@ const Content = () => {
         />
         </div>
       <div className="content-container">
-        <div className="flex-container">
         <h1 className="projects-h1">{info.projects}</h1>
 
         <div className="project-list">
@@ -73,7 +70,6 @@ const Content = () => {
             ))}
             </div>
           </div>
-        </div>
     </>
   );
 }

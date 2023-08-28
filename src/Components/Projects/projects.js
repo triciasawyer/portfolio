@@ -8,7 +8,7 @@ const Project = ({ images }) => {
             <div className="project-carousel-container">
                 <Carousel>
                     {images.map((image, index) => (
-                        <Carousel.Item className="carousels" key={index}>
+                        <Carousel.Item key={index}>
                             <img className="project-img" src={image} alt={`Project ${index + 1}`} />
                         </Carousel.Item>
                     ))}

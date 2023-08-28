@@ -1,12 +1,10 @@
 import React from 'react';
-import Header from '../Header/header';
 import Skills from '../Skills/skills';
 import './about.css';
 
 const About = () => {
   return (
     <>
-      <Header />
       <div className="about-container">
         <h1>about.</h1>
       </div>

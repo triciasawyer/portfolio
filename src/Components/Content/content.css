@@ -1,17 +1,9 @@
 .content-container {
   padding: 60px 30px;
   background-color: #f8f8f8;
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-left: 10px;
 }
 
 .img-section {
@@ -25,29 +17,11 @@
   height: 25rem;
 }
 
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .project-list {
   padding-bottom: 2rem;
-  margin-bottom: 2rem;
   margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  width: auto;
 }
-
-/* .project-list .project-carousel-container {
-  flex: auto; 
-  margin: 0 1rem; */
-  /* max-width: 100%; */
-/* } */
 
 .projects-h1 {
   font-weight: light;
@@ -55,13 +29,15 @@
   color: rgb(101, 101, 101);
   position: relative;
   box-sizing: border-box;
+  display: inline-block;
+  padding: 0 15px;
 }
 
 .projects-h1::before,
 .projects-h1::after {
   content: "";
   display: inline-block;
-  width: 25rem;
+  width: 50%;
   height: 1px;
   background-color: rgb(77, 77, 77);
   position: absolute;
@@ -70,11 +46,11 @@
 }
 
 .projects-h1::before {
-  left: -24rem;
+  left: -50%;
 }
 
 .projects-h1::after {
-  right: -24rem;
+  right: -50%;
 }
 
 @media (max-width: 767px) {

@@ -4,6 +4,7 @@ import Content from './Components/Content/content';
 import About from './Components/About/about';
 import Portfolio from './Components/Portfolio/portfolio';
 import Contact from './Components/Contact/contact';
+import Header from './Components/Header/header'
 import Footer from './Components/Footer/footer';
 import './App.css';
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Header />
         <main>
           <Routes>
             <Route path="/" element={<Content />} />

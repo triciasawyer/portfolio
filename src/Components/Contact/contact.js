@@ -1,11 +1,9 @@
 import React from 'react';
-import Header from '../Header/header';
 import './contact.css';
 
 const Contact = () => {
   return (
     <>
-      <Header />
       <div className="contact-container">
         <h2 className="contact-title">contact.</h2>
         <p className="contact-text">Get in touch with me via social media or email.</p>
