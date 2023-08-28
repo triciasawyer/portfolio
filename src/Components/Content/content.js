@@ -23,9 +23,9 @@ const Content = () => {
       ],
     },
     {
-      title: "Project 2", // Add a new project
+      title: "Project 2",
       date: "August 2022",
-      languages: "Python, Flask",
+      languages: "",
       details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       images: [
         'https://via.placeholder.com/400x200',
@@ -34,7 +34,7 @@ const Content = () => {
       ],
     },
     {
-      title: "Project 3", // Add another new project
+      title: "Project 3",
       date: "September 2022",
       languages: "HTML, CSS",
       details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
