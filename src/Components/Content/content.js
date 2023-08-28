@@ -16,9 +16,9 @@ const Content = () => {
       languages: "JavaScript, React",
       details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       images: [
-        'https://via.placeholder.com/400x200',
-        'https://via.placeholder.com/400x200',
-        'https://via.placeholder.com/400x200',
+        'https://via.placeholder.com/500x400',
+        'https://via.placeholder.com/500x400',
+        'https://via.placeholder.com/500x400',
       ],
     },
     {
@@ -27,9 +27,9 @@ const Content = () => {
       languages: "",
       details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       images: [
-        'https://via.placeholder.com/400x200',
-        'https://via.placeholder.com/400x200',
-        'https://via.placeholder.com/400x200',
+        'https://via.placeholder.com/500x400',
+        'https://via.placeholder.com/500x400',
+        'https://via.placeholder.com/500x400',
       ],
     },
     {
@@ -38,9 +38,9 @@ const Content = () => {
       languages: "HTML, CSS",
       details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       images: [
-        'https://via.placeholder.com/400x200',
-        'https://via.placeholder.com/400x200',
-        'https://via.placeholder.com/400x200',
+        'https://via.placeholder.com/500x400',
+        'https://via.placeholder.com/500x400',
+        'https://via.placeholder.com/500x400',
       ],
     },
   ];
