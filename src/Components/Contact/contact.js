@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-
+          
 const Contact = () => {
   return (
     <>
@@ -11,12 +11,14 @@ const Contact = () => {
           <p className="contact-info">
             📬 Email: <a href="mailto:tricia.sawyer03@gmail.com" className="contact-link">tricia.sawyer03@gmail.com</a>
           </p>
-          <p className="contact-info">
-            🌐 LinkedIn: <a href="https://www.linkedin.com/in/triciasawyer-03dev/" target="_blank" rel="noopener noreferrer" className="contact-link">linkedin.com/in/triciasawyer-03dev/</a>
-          </p>
-          <p className="contact-info">
-            💻 GitHub: <a href="https://github.com/triciasawyer" target="_blank" rel="noopener noreferrer" className="contact-link">github.com/triciasawyer</a>
-          </p>
+          {/* <p>
+          <a href="https://www.linkedin.com/in/triciasawyer-03dev/" className="linkedin-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                      alt="LinkedIn"
+            className='linkedin-logo'
+            />
+          </a>
+          </p> */}
         </div>
       </div>
     </>
