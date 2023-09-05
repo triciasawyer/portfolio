@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 import Project from '../Projects/projects';
 import profileImg from '../../images/imgp.png';
 import capsDriver from '../../assets/caps-driver.png';
@@ -14,7 +15,7 @@ const Content = () => {
 
   const projects = [
     {
-      title: "Core administrative processing systems (CAPS system)",
+      title: "Core administrative processing systems (CAPS)",
       date: "May 2022",
       languages: "JavaScript, Node.js",
       details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -56,12 +57,13 @@ const Content = () => {
           src={profileImg}
           alt="Profile pic"
         />
-        </div>
+      </div>
       <div className="content-container">
         <h1 className="projects-h1">{info.projects}</h1>
 
         <div className="project-list">
-            {projects.map((project, index) => (
+          {projects.map((project, index) => (
+            // <Link to={`/projects/${index}`} key={index}>
               <Project
                 key={index}
                 title={project.title}
@@ -70,9 +72,10 @@ const Content = () => {
                 details={project.details}
                 images={project.images}
               />
-            ))}
-            </div>
-          </div>
+            // </Link>
+          ))}
+        </div>
+      </div>
     </>
   );
 }
