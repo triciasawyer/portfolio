@@ -5,6 +5,9 @@ import profileImg from '../../images/imgp.png';
 import capsDriver from '../../assets/caps-driver.png';
 import capsFlowerV from '../../assets/caps-flowerV.png';
 import capsWidgetV from '../../assets/caps-widgetV.png';
+import todoAdmin from '../../assets/todoAdmin.png';
+import todoSettings from '../../assets/todoSettings.png';
+import todoUser from '../../assets/todoUser.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './content.css';
 
@@ -16,7 +19,7 @@ const Content = () => {
   const projects = [
     {
       title: "Core administrative processing systems (CAPS)",
-      date: "May 2022",
+      date: "May 2023",
       languages: "JavaScript, Node.js",
       details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       images: [
@@ -26,14 +29,14 @@ const Content = () => {
       ],
     },
     {
-      title: "Project 2",
-      date: "August 2022",
-      languages: "",
+      title: "Todo app",
+      date: "July 2023",
+      languages: "JavaScript, mantine core",
       details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       images: [
-        'https://via.placeholder.com/500x400',
-        'https://via.placeholder.com/500x400',
-        'https://via.placeholder.com/500x400',
+        todoAdmin,
+        todoUser,
+        todoSettings,
       ],
     },
     {
