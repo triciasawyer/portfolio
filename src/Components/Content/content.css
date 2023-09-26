@@ -10,11 +10,15 @@
   background-color: #f9f9f9;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
-.profile-img {
-  width: 55rem;
-  height: 25rem;
+.profile-img
+.profile-imgT {
+  width: 33rem;
+  height: 15rem;
 }
 
 .project-list {

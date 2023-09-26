@@ -1,34 +1,29 @@
 import React from 'react';
 import Skills from '../Skills/skills';
+import profImg from '../../images/imgp-transition.png';
 import './about.css';
 
 const About = () => {
   return (
     <>
-      <div className="about-container">
-        <h1 className="about-heading">about.</h1>
-      </div>
-      <div className="about-content">
-        <div className="profile-image-container">
-          <img
-            src="your-profile-image-url.jpg"
-            alt="Tricia Sawyer"
-            className="profile-image"
-          />
+      <div className="about-con">
+      <div className="about-header">
+        <h1 className="about-h1">about</h1>
+          <img src={profImg} alt="Tricia Sawyer" className="prof-img"/>
         </div>
         <div className="about-text">
           <p>
-            Hello! I'm Tricia Sawyer, a passionate full-stack Developer based in Cedar Rapids, Iowa.
+            I'm a full-stack Software Developer based in Cedar Rapids, Iowa.
           </p>
           <p>
             With a background in teaching, I bring [Your Unique Skills] to the table.
           </p>
           <p>
-            When I'm not coding, you can find me out on the lake, or simply enjoying the outdoors.
+            When I'm not creating digital magic, you'll find me out on the lake or watching the newest movies.
           </p>
           <Skills />
         </div>
-      </div>
+        </div>
     </>
   );
 }

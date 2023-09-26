@@ -2,6 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import Project from '../Projects/projects';
 import profileImg from '../../images/imgp.png';
+import profileTransition from '../../images/imgp-transition.png';
 import capsDriver from '../../assets/caps-driver.png';
 import capsFlowerV from '../../assets/caps-flowerV.png';
 import capsWidgetV from '../../assets/caps-widgetV.png';
@@ -55,11 +56,8 @@ const Content = () => {
   return (
     <>
       <div className="img-section">
-        <img
-          className="profile-img"
-          src={profileImg}
-          alt="Profile pic"
-        />
+        <img className="profile-img" src={profileImg} alt="Profile pic" />
+        <img className="profile-imgT" src={profileTransition} alt="Profile pic transition" />
       </div>
       <div className="content-container">
         <h1 className="projects-h1">{info.projects}</h1>
@@ -67,14 +65,14 @@ const Content = () => {
         <div className="project-list">
           {projects.map((project, index) => (
             // <Link to={`/projects/${index}`} key={index}>
-              <Project
-                key={index}
-                title={project.title}
-                date={project.date}
-                languages={project.languages}
-                details={project.details}
-                images={project.images}
-              />
+            <Project
+              key={index}
+              title={project.title}
+              date={project.date}
+              languages={project.languages}
+              details={project.details}
+              images={project.images}
+            />
             // </Link>
           ))}
         </div>
