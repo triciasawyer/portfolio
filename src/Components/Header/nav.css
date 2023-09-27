@@ -3,30 +3,36 @@
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-item {
-    margin-top: 5px;
-    padding: 0;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: rgb(233, 233, 233);
-    transition: color 0.3s;
-  }
-  
-  .nav-link:hover {
-    color: #6b6969;
-  }
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 
-  @media (max-width: 768px) {
-    .nav-list {
-        flex-direction: column;
-        gap: 1rem;
-    }
+.nav-item {
+  margin-top: 5px;
+  padding: 0;
+}
+
+/* Changed class to active-link */
+.nav-link {
+  font-size: 1.1rem;
+  color: rgb(233, 233, 233);
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+
+.nav-link:hover {
+  color: #6b6969;
+}
+
+/* .active-link {
+  color: #6b6969;
+} */
+
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
