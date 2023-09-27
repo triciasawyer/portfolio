@@ -42,6 +42,10 @@
     color: #0056b3;
   }
 
+  .mail-icon {
+    color: rgb(31, 31, 218);
+  }
+
   @media (max-width: 768px) {
     .contact-title {
         font-size: 2rem;
