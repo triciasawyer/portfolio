@@ -8,7 +8,7 @@ const Skills = () => {
     { icon: <DiCss3 className="skill-icon" />, name: 'CSS3' },
     { icon: <DiJavascript1 className="skill-icon" />, name: 'JavaScript' },
     { icon: <DiReact className="skill-icon" />, name: 'React' },
-    { icon: <DiNodejs className="skill-icon" />, name: 'Node.js' },
+    { icon: <DiNodejs className="skill-icon" />, name: 'Node' },
     { icon: <DiMongodb className="skill-icon" />, name: 'MongoDB' },
   ];
 

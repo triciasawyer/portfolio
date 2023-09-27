@@ -1,59 +1,82 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
+import Project from '../Projects/projects';
+import profileImg from '../../images/imgp.png';
+import profileTransition from '../../images/imgp-transition.png';
+import capsDriver from '../../assets/caps-driver.png';
+import capsFlowerV from '../../assets/caps-flowerV.png';
+import capsWidgetV from '../../assets/caps-widgetV.png';
+import todoAdmin from '../../assets/todoAdmin.png';
+import todoSettings from '../../assets/todoSettings.png';
+import todoUser from '../../assets/todoUser.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './content.css';
-import Skills from '../Skills/skills';
-import Header from '../Header/header';
-
-const ExperienceItem = ({ experience }) => {
-  return (
-    <div className="experience-item">
-      <h2>{experience.company}</h2>
-      <p>{experience.title}</p>
-      <p>{experience.years}</p>
-    </div>
-  );
-};
 
 const Content = () => {
   const info = {
-    experience: "Experience",
-  }
+    projects: "SOME OF MY LATEST WORK",
+  };
 
-
-  const experience = [
+  const projects = [
     {
-      company: "DeltaV Code School",
-      title: "Part-Time Teaching Assistant",
-      years: "July 2023 - present",
-      // mainTech: ["JavaScript"],
-      // technologies: ["VanillaJS", "HTML", "CSS", "React"],
+      title: "Core administrative processing systems (CAPS)",
+      date: "May 2023",
+      languages: "JavaScript, Node.js",
+      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      images: [
+        capsDriver,
+        capsFlowerV,
+        capsWidgetV,
+      ],
     },
     {
-      company: "College Community School District",
-      title: "Assistant teacher",
-      years: "June 2022 - Feb 2023"
+      title: "Todo app",
+      date: "July 2023",
+      languages: "JavaScript, mantine core",
+      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      images: [
+        todoAdmin,
+        todoUser,
+        todoSettings,
+      ],
     },
     {
-      company: "Perfect Game",
-      title: "Statistic keeper",
-      years: "June 2020 - Aug 2021"
+      title: "Project 3",
+      date: "September 2022",
+      languages: "HTML, CSS",
+      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      images: [
+        'https://via.placeholder.com/500x400',
+        'https://via.placeholder.com/500x400',
+        'https://via.placeholder.com/500x400',
+      ],
     },
   ];
 
   return (
     <>
-    <Header />
-    <div className="content-container">
-      <div className="flex-container">
-        <Skills />
-        <div className="experience-list">
-          <h1 className="h1-experience">{info.experience}</h1>
-          {experience.map((item, index) => (
-            <ExperienceItem key={index} experience={item} />
+      <div className="img-section">
+        <img className="profile-img" src={profileImg} alt="Profile pic" />
+        <img className="profile-imgT" src={profileTransition} alt="Profile pic transition" />
+      </div>
+      <div className="content-container">
+        <h1 className="projects-h1">{info.projects}</h1>
+
+        <div className="project-list">
+          {projects.map((project, index) => (
+            // <Link to={`/projects/${index}`} key={index}>
+            <Project
+              key={index}
+              title={project.title}
+              date={project.date}
+              languages={project.languages}
+              details={project.details}
+              images={project.images}
+            />
+            // </Link>
           ))}
         </div>
       </div>
-    </div>
     </>
   );
 }

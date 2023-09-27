@@ -1,35 +1,29 @@
 import React from 'react';
-import Nav from '../Header/nav'
+import Skills from '../Skills/skills';
+import profImg from '../../images/imgp-transition.png';
 import './about.css';
 
 const About = () => {
   return (
     <>
-    <Nav />
-    <div className="about-container">
+      <div className="about-con">
       <div className="about-header">
-      </div>
-      <div className="about-content">
-        <div className="profile-image-container">
-          <img
-            src="your-profile-image-url.jpg"
-            alt="Your Name"
-            className="profile-image"
-          />
+        <h1 className="about-h1">about</h1>
+          <img src={profImg} alt="Tricia Sawyer" className="prof-img"/>
         </div>
         <div className="about-text">
           <p>
-            Hello! I'm Tricia Sawyer, a passionate Front-End Developer based in Cedar Rapids, Iowa.
+            I'm a full-stack Software Developer based in Cedar Rapids, Iowa.
           </p>
           <p>
-            I have a strong passion for creating visually appealing and user-friendly web experiences. With a background in teaching, I bring [Your Unique Skills] to the table.
+            With a background in teaching, I bring [Your Unique Skills] to the table.
           </p>
           <p>
-            When I'm not coding, you can find me on the lake kyaking, or just enjoying the outdoors being active.
+            When I'm not creating digital magic, you'll find me out on the lake or watching the newest movies.
           </p>
+          <Skills />
         </div>
-      </div>
-    </div>
+        </div>
     </>
   );
 }

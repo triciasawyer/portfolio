@@ -1,50 +1,76 @@
 .content-container {
-  padding: 30px;
+  padding: 60px 30px;
   background-color: #f8f8f8;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.flex-container {
-  display: flex;
-  gap: 10rem;
-}
-
-.experience-item {
-  background-color: #fff;
-  border-radius: 10px;
-  width: 35rem;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.experience-item h2 {
-  font-size: 24px;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.experience-item p {
-  font-size: 16px;
-  color: #666;
-  margin: 0;
-}
-
-.h1-experience {
-  font-size: 36px;
-  color: #333;
-  margin-top: 4rem;
-  margin-bottom: 20px;
-  font-weight: bold;
+.img-section {
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-img
+.profile-imgT {
+  width: 33rem;
+  height: 15rem;
+}
+
+.project-list {
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.projects-h1 {
+  font-weight: light;
+  font-size: 20px;
+  color: rgb(101, 101, 101);
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.projects-h1::before,
+.projects-h1::after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 1px;
+  background-color: rgb(77, 77, 77);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.projects-h1::before {
+  left: -50%;
+}
+
+.projects-h1::after {
+  right: -50%;
 }
 
 @media (max-width: 767px) {
-  .experience-item {
-    padding: 15px;
+  .flex-container {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
   }
 
-  h1 {
-    font-size: 28px;
+  .project-list {
+    margin-left: 0;
+    width: auto;
   }
 }
-
