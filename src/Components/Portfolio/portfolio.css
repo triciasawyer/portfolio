@@ -2,53 +2,49 @@
     padding: 60px 30px;
     background-color: #f8f8f8;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 5%;
     box-sizing: border-box;
     text-align: center;
   }
   
   .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 4 columns */
+    gap: 20px; /* Add margin between items */
+    margin-top: 1%;  
   }
   
   .project-carousel-container {
-    width: calc(25% - 20px);
-    margin-bottom: 30px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
   }
   
   .project-carousel-container .carousel-title {
-    font-size: 1rem; /* Adjust title font size */
-    margin-top: 10px;
+    font-size: 1rem;
   }
   
   .project-carousel-container .carousel-date {
     color: #777;
-    font-size: 0.8rem; /* Adjust date font size */
-    margin-top: 5px;
+    font-size: 0.8rem;
   }
   
   @media (max-width: 1199px) {
-    .project-carousel-container {
-      width: calc(33.33% - 20px); /* Display 3 cards per row on medium screens */
+    .project-grid {
+      grid-template-columns: repeat(3, 1fr); /* Display 3 columns on medium screens */
     }
   }
   
   @media (max-width: 991px) {
-    .project-carousel-container {
-      width: calc(50% - 20px); /* Display 2 cards per row on smaller screens */
+    .project-grid {
+      grid-template-columns: repeat(2, 1fr); /* Display 2 columns on smaller screens */
     }
   }
   
   @media (max-width: 767px) {
-    .project-carousel-container {
-      width: calc(100% - 20px); /* Display 1 card per row on mobile screens */
+    .project-grid {
+      grid-template-columns: repeat(1, 1fr); /* Display 1 column on mobile screens */
     }
   }
   
