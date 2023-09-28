@@ -1,15 +1,15 @@
 import React from 'react';
 import Skills from '../Skills/skills';
-import profImg from '../../images/imgp-transition.png';
+import profImg from '../../images/aboutProf.png';
 import './about.css';
 
 const About = () => {
   return (
     <>
       <div className="about-con">
+        <div className="header-p">
       <div className="about-header">
         <h1 className="about-h1">about</h1>
-          <img src={profImg} alt="Tricia Sawyer" className="prof-img"/>
         </div>
         <div className="about-text">
           <p>
@@ -21,8 +21,10 @@ const About = () => {
           <p>
             When I'm not creating digital magic, you'll find me out on the lake or watching the newest movies.
           </p>
+          </div>
+          </div>
           <Skills />
-        </div>
+        <img src={profImg} alt="Tricia Sawyer" className="prof-img"/>
         </div>
     </>
   );

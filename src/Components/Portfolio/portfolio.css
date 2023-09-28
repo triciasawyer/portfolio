@@ -1,6 +1,5 @@
 .portfolio-container {
     padding: 60px 30px;
-    background-color: #f8f8f8;
     max-width: 100%;
     margin: 5%;
     box-sizing: border-box;
@@ -8,7 +7,7 @@
   }
   
   .portfolio-h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: #333;
     font-weight: bold;
     margin-bottom: 1rem;

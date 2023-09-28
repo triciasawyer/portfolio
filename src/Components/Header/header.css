@@ -17,7 +17,8 @@
 
 .social-icons {
     display: flex;
-    margin-left: 10rem;
+    margin-left: 12rem;
+    margin-top: 15px;
 }
 
 .social-icons img {
@@ -51,14 +52,6 @@
     margin-right: 30px;
     display: flex;
     flex-direction: row;
-}
-
-.header-description {
-    font-size: 1.2rem;
-    margin-top: 25px;
-    margin-bottom: 7.5rem;
-    color: #ddd;
-    text-align: center;
 }
 
 @media (max-width: 768px) {
