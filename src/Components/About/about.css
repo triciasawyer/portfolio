@@ -15,7 +15,7 @@
   }  
 
 .about-h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 20%;
@@ -23,9 +23,9 @@
 
   .prof-img {
     width: 25rem;
-    height: 15rem;
+    height: 12rem;
     border-radius: 50%;
-    border: 2px solid #333;
+    /* border: 1px solid #073f30; */
     margin-left: 15rem;
   }
 

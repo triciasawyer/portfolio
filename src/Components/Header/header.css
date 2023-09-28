@@ -54,14 +54,6 @@
     flex-direction: row;
 }
 
-.header-description {
-    font-size: 1.2rem;
-    margin-top: 25px;
-    margin-bottom: 7.5rem;
-    color: #ddd;
-    text-align: center;
-}
-
 @media (max-width: 768px) {
     .nav-heading {
         margin-right: 0;

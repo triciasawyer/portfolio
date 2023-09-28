@@ -1,6 +1,6 @@
 import React from 'react';
 import Skills from '../Skills/skills';
-import profImg from '../../images/imgp-transition.png';
+import profImg from '../../images/aboutProf.png';
 import './about.css';
 
 const About = () => {
