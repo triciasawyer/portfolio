@@ -50,9 +50,10 @@
     color: #363736;
   }
 
-  /* .Email {
-    
-  } */
+  .Email {
+    display: flex;
+    flex-direction: row;
+  }
 
   .Email-tx {
     margin-left: 15px;
