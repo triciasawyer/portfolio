@@ -1,8 +1,6 @@
 .about-con {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 4%;
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
@@ -11,21 +9,19 @@
 .about-header {
     display: flex;
     align-items: center; /* Center items horizontally */
-    margin-bottom: 20px;
   }  
 
 .about-h1 {
     font-size: 5rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 20%;
   }
 
   .prof-img {
     width: 25rem;
     height: 12rem;
     border-radius: 50%;
-    /* border: 1px solid #073f30; */
+    border: 1px solid #073f30;
     margin-left: 15rem;
   }
 
@@ -42,16 +38,26 @@
     line-height: 1.5;
   }
 
+  .header-p {
+    display: flex;
+    flex-direction: column;
+    /* Change color to match contact flex */
+    background-color: #fefdfd;
+    width: 40%;
+    align-items: center;
+    margin-left: 10%;
+  }
+
   @media (max-width: 768px) {
     .about-con {
       flex-direction: column;
       text-align: center;
     }
   
-    .about-h1 {
-      margin-bottom: 20px;
-      margin-right: 0;
-    }
+    /* .about-h1 { */
+      /* margin-bottom: 20px; */
+      /* margin-right: 0; */
+    /* } */
   
     .prof-img {
       margin-bottom: 20px;
