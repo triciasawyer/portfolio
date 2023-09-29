@@ -1,61 +1,56 @@
 .about-con {
-    align-items: center;
-    margin-top: 4%;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
+  /* align-items: center; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
 }
 
-.about-header {
-    display: flex;
-    align-items: center; /* Center items horizontally */
-  }  
+.header-p {
+  flex: 1;
+  max-width: 400px;
+  margin-left: 7rem;
+  margin-top: 5%;
+}
 
 .about-h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    color: #333;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 4%;
+}
+
+.prof-img {
+  width: 25rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 1px solid #073f30;
+}
+
+.about-text {
+  max-width: 600px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #7b7b7b;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .about-con {
+    flex-direction: column;
+    text-align: center;
   }
 
   .prof-img {
-    width: 25rem;
-    height: 12rem;
-    border-radius: 50%;
-    border: 1px solid #073f30;
-    margin-left: 15rem;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .about-text {
-    max-width: 600px;
-    padding: 2rem;
-    text-align: left;
-    color: #7b7b7b;
-    font-size: 1.2rem;
-    font-weight: 300;
+  .skills {
+    max-width: 100%;
+    padding-left: 0; /* Remove padding on smaller screens */
   }
-
-  .header-p {
-    display: flex;
-    flex-direction: column;
-    /* Change color to match contact flex */
-    background-color: #fefdfd;
-    width: 40%;
-    align-items: center;
-    margin-left: 10%;
-  }
-
-  @media (max-width: 768px) {
-    .about-con {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    /* .about-h1 { */
-      /* margin-bottom: 20px; */
-      /* margin-right: 0; */
-    /* } */
-  
-    .prof-img {
-      margin-bottom: 20px;
-    }
-  }
+}

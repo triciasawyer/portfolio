@@ -13,21 +13,19 @@ const Skills = () => {
   ];
 
   return (
-    <section className="skills-section">
-      <div className="container">
-        <h1 className="section-title">Skills</h1>
-        <div className="skills-icons">
-          {skillsData.map((skill, index) => (
-            <div key={index} className="skill">
-              <div className="icon-container">
-                {skill.icon}
-                <span className="skill-name">{skill.name}</span>
-              </div>
+    <div className="skills-section">
+      <h1 className="section-title">Skills</h1>
+      <div className="skills-icons">
+        {skillsData.map((skill, index) => (
+          <div key={index} className="skill">
+            <div className="icon-container">
+              {skill.icon}
+              <span className="skill-name">{skill.name}</span>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
