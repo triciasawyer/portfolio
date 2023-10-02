@@ -1,67 +1,66 @@
 .contact-container {
-    background-color: #fefdfd;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4%;
-    max-width: 35%;
-    margin-left: 15%;
-  }
-  
-  .contact-h1 {
-    font-size: 5rem;
-    color: #333;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .contact-p {
-    font-size: 1.8rem;
-    font-weight: 300;
-    margin-top: 0.2rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #949494;
-    text-align: center;
-  }
+  background-color: #fefdfd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+  max-width: 35%;
+  margin-left: 15%;
+}
 
-  .title-p {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-details {
-    margin-top: 30px;
-  }
-  
-  .contact-info {
-    font-size: 1.1rem;
-    color: #444;
-    margin: 15px 0;
-    background-color: #f1f1f1;
-  }
+.contact-h1 {
+  font-size: 5rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
 
-  /* .linkedin-logo {
+.contact-p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 0.2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #949494;
+  text-align: center;
+}
+
+.title-p {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-details {
+  margin-top: 30px;
+}
+
+.contact-info {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 15px 0;
+  background-color: #f1f1f1;
+}
+
+/* .linkedin-logo {
     width: 40px;
   } */
 
-  .mail-icon {
-    color: #363736;
-  }
-
-  .Email {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .Email-tx {
-    margin-left: 15px;
-  }
-
-  @media (max-width: 768px) {
-    .contact-h1 {
-        font-size: 2rem;
-    }
+.mail-icon {
+  color: #363736;
 }
-  
+
+.Email {
+  display: flex;
+  flex-direction: row;
+}
+
+.Email-tx {
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .contact-h1 {
+    font-size: 2rem;
+  }
+}

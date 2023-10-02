@@ -64,7 +64,7 @@ const Portfolio = () => {
       date: "September 2022",
       images: ["https://via.placeholder.com/500x400"],
     },
-    
+
   ];
 
   return (
@@ -73,10 +73,10 @@ const Portfolio = () => {
       <div className="port-grid">
         {projects.map((project, index) => (
           <div className="port-card" key={index}>
-          <img src={project.images} alt={project.title} />
-          <h2 className="card-title">{project.title}</h2>
-          <p className="card-date">{project.date}</p>
-        </div>
+            <img src={project.images} alt={project.title} />
+            <h2 className="card-title">{project.title}</h2>
+            <p className="card-date">{project.date}</p>
+          </div>
         ))}
       </div>
     </div>
