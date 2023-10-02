@@ -1,13 +1,13 @@
 import React from 'react';
-import Project from '../Projects/projects';
+import Resty from '../../images/resty.png';
 import './portfolio.css';
 
 const Portfolio = () => {
   const projects = [
     {
-      title: "Project 1",
+      title: "Resty",
       date: "May 2023",
-      images: ["https://via.placeholder.com/500x400"],
+      images: Resty,
     },
     {
       title: "Project 2",
@@ -70,14 +70,13 @@ const Portfolio = () => {
   return (
     <div className='portfolio-container'>
       <h1 className='portfolio-h1'>portfolio</h1>
-      <div className="project-grid">
+      <div className="port-grid">
         {projects.map((project, index) => (
-          <Project
-            key={index}
-            title={project.title}
-            date={project.date}
-            images={project.images}
-          />
+          <div className="port-card" key={index}>
+          <img src={project.images} alt={project.title} />
+          <h2 className="card-title">{project.title}</h2>
+          <p className="card-date">{project.date}</p>
+        </div>
         ))}
       </div>
     </div>
