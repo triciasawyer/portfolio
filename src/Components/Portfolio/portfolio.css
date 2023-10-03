@@ -1,5 +1,5 @@
 .portfolio-container {
-  padding: 50px 65px;
+  padding: 50px 100px;
   background-color: #f8f8f8;
   max-width: 100%;
   margin: 0 auto;
@@ -41,7 +41,7 @@
 }
 
 .card-title {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 350;
   padding: 3px;
   color: #3c3c3c;
@@ -49,10 +49,10 @@
 }
 
 .card-date {
-  font-size: 16px;
+  font-size: 18px;
   color: #474747;
   font-weight: 300;
-  padding-top: 10px;
+  padding-top: 2px;
 }
 
 .arrow-icon {
