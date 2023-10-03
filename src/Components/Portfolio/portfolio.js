@@ -15,8 +15,9 @@ const Portfolio = () => {
       images: Resty,
     },
     {
-      title: "Project 2",
+      title: "Mobile App",
       date: "July 2023",
+      link: "https://github.com/triciasawyer/contacts",
       images: ["https://via.placeholder.com/500x400"],
     },
     {
