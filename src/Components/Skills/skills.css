@@ -1,30 +1,29 @@
 .skills-section {
-  background-color: #eeeeee;
+  background-color: #fefdfd;
   padding: 15px 20px;
-  margin-top: 50px;
+  margin-top: 1%;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  box-sizing: border-box;
-  max-width: 100%;
   align-items: center;
-  width: 65%;
-}
-
-.container {
-  max-width: 1200px;
-  padding: 0 15px;
+  width: 7%;
+  margin-left: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 25px;
   color: #333;
   margin-bottom: 10px;
   text-align: center;
+  font-weight: 350;
+  text-decoration: 1.5px underline;
 }
 
 .skills-icons {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -58,22 +57,22 @@
 
 @media (max-width: 768px) {
   .skills-section {
-      width: auto;
-      padding: 15px;
+    width: auto;
+    padding: 15px;
   }
 
   .section-title {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .skills-icons {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 
   .skill {
-      margin: 10px;
+    margin: 10px;
   }
 }

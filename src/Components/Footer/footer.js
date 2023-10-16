@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer-section">
                 <h1 className='h1-footer'>&copy; 2023 Tricia Sawyer</h1>
                 <div className='nav-footer'>
-                <Nav />
+                    <Nav />
                 </div>
             </div>
         </>

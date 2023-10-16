@@ -15,21 +15,21 @@ const Contact = () => {
     <>
       <div className="contact-container">
         <div className="title-p">
-        <h1 className="contact-h1">contact</h1>
-        <p className="contact-p">
-          Get in touch with me via social media or email.
-        </p>
+          <h1 className="contact-h1">contact</h1>
+          <p className="contact-p">
+            Get in touch with me via social media or email.
+          </p>
         </div>
         <div className="contact-details">
-            <span className="Email" role="img" aria-label="Email Icon" onClick={openEmailClient} style={{ cursor: 'pointer' }}>
-              <FontAwesomeIcon icon={faEnvelope} className="mail-icon" />
-              <p className='Email-tx'>Email</p>
-            </span>
-            <span>
-              <p className="LinkedIn-tx"> LinkedIn</p>
-            </span>
+          <span className="Email" role="img" aria-label="Email Icon" onClick={openEmailClient} style={{ cursor: 'pointer' }}>
+            <FontAwesomeIcon icon={faEnvelope} className="mail-icon" />
+            <p className='Email-tx'>Email</p>
+          </span>
+          <span>
+            <p className="LinkedIn-tx"> LinkedIn</p>
+          </span>
 
-            {/* <p>
+          {/* <p>
           <a href="https://www.linkedin.com/in/triciasawyer-03dev/" className="linkedin-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                       alt="LinkedIn"

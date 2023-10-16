@@ -1,61 +1,73 @@
 .about-con {
-    align-items: center;
-    margin-top: 4%;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
 }
 
-.about-header {
-    display: flex;
-    align-items: center; /* Center items horizontally */
-  }  
+.header-p {
+  flex: 1;
+  max-width: 30rem;
+  margin-left: 4rem;
+  margin-top: 7%;
+  text-align: left;
+}
+
+.about-img {
+  display: flex;
+  flex-direction: row;
+  background-color: #fefdfd;
+  height: 24rem;
+  width: 80rem;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  margin-left: 20px;
+}
 
 .about-h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    color: #333;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333;
+  max-width: 400px;
+  margin-bottom: 4%;
+  margin-left: 15px;
+}
+
+.prof-img {
+  width: 52rem;
+  height: 24rem;
+}
+
+.about-text1 {
+  max-width: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #7b7b7b;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 6%;
+}
+
+.about-text2 {
+  max-width: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 350;
+}
+
+@media (max-width: 768px) {
+  .about-con {
+    flex-direction: column;
+    text-align: center;
   }
 
   .prof-img {
-    width: 25rem;
-    height: 12rem;
-    border-radius: 50%;
-    border: 1px solid #073f30;
-    margin-left: 15rem;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .about-text {
-    max-width: 600px;
-    padding: 2rem;
-    text-align: left;
-    color: #7b7b7b;
-    font-size: 1.2rem;
-    font-weight: 300;
+  .skills {
+    max-width: 100%;
+    padding-left: 0;
   }
-
-  .header-p {
-    display: flex;
-    flex-direction: column;
-    /* Change color to match contact flex */
-    background-color: #fefdfd;
-    width: 40%;
-    align-items: center;
-    margin-left: 10%;
-  }
-
-  @media (max-width: 768px) {
-    .about-con {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    /* .about-h1 { */
-      /* margin-bottom: 20px; */
-      /* margin-right: 0; */
-    /* } */
-  
-    .prof-img {
-      margin-bottom: 20px;
-    }
-  }
+}
